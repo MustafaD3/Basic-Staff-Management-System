@@ -1,0 +1,85 @@
+*{
+    list-style-type: none;
+}
+html{
+    ::-webkit-scrollbar{
+        display: none;
+    }
+}
+ul{
+    margin: 0px ;
+    padding: 0px;
+}
+
+#title{
+    text-align: center;
+    font-family: bangers;
+    margin-top: 30px;
+    text-shadow: 0px 0px 10px rgb(195, 194, 194);
+}
+#main{
+    width: 95%;
+    margin: 40px auto;
+    #education{
+        &:hover{
+            background-color: rgba(210, 208, 208, 0.471);
+            cursor: pointer;
+        }
+    }
+    #department{
+        &:hover{
+            background-color: rgba(210, 208, 208, 0.471);
+            cursor: pointer;
+        }
+    }
+    #user-list{
+        width: 100%;
+        height: auto;
+        .user{
+            border: 2px solid black;
+            padding: 10px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            margin-top: 1em;
+            span{
+                font-family: cursive;
+                font-size: 1.1em;
+                width: 11%;
+                display: inline-block;
+            }
+            span:nth-child(1){
+                display: inline;
+                width: auto;
+            }
+            span:nth-child(2){
+                width: 7%;
+            }
+            span:nth-child(3){
+                width: 8.5%;
+            }
+            span:nth-child(4){
+                width: 18%;
+            }
+            span:nth-child(5){
+                width: 5%;
+            }
+            span:nth-child(6){
+                width: 14%;
+            }
+            span:nth-child(7){
+                width: 13%;
+            }
+            span:nth-child(8){
+                width: 16%;
+            }
+        
+            span:nth-child(9){
+                text-align: right;
+                width: 4%;
+            }
+        }
+    }
+}
