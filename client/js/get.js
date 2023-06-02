@@ -81,7 +81,7 @@ function formCreate(user){
     const button = document.createElement("input")
     const form = document.createElement("form")
     button.setAttribute("type","button")
-    button.setAttribute("value","Submit")
+    button.setAttribute("value","Update")
     button.classList.add("form-control","mt-3" ,"btn","btn-dark","fs-4")
     div.classList.add("form")
     div.classList.add("shadow")
@@ -134,13 +134,13 @@ function userUpdate(id,form){
         }
     }
     if(Object.keys(object).length == 8){
-        userUpdateFetch(object)
+        userUpdateRequest(object)
     }
     else{
         alert("Tüm Alanları Doldurunuz")
     }
 }
-function userUpdateFetch(object){
+function userUpdateRequest(object){
 fetch("http://localhost:5000/userUpdate",{
     headers:{
         "content-type":"application/json"
